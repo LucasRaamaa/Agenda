@@ -3,6 +3,8 @@ package vista;
 import servicio.GestorContactos;
 import model.Contacto;
 import java.util.Scanner;
+import utils.UtilInputs;
+
 
 public class Menu {
   private GestorContactos gestor = new GestorContactos();
@@ -36,24 +38,22 @@ public class Menu {
 
   // Luego validar que telefono sea numerico, email contenga @ y . y en nombre no sean numeros
   private void agregar(){
-    System.out.print("Nombre: ");
-    String nombre = sc.nextLine();
-    System.out.println("Telefono: ");
-    String tel = sc.nextLine();
-    System.out.println("Email: ");
-    String email = sc.nextLine();
+    String nombre = UtilInputs.leerTexto("Nombre: ");
+    String tel = UtilInputs.leerTelefono("Telefono: ");
+    String email = UtilInputs.leerEmail("Email: ");
     gestor.agregarContacto(nombre, tel, email);
     System.out.println("Contacto agregado correctamente.");
   }
+
   private void buscar(){
     System.out.print("Ingrese el nombre a buscar: ");
     String nombre = sc.nextLine();
     Contacto c = gestor.buscarNombre(nombre);
     System.out.println(c != null ? c: "No encontrado.");
   }
+
   private void modificar(){
-    System.out.print("Ingrese ID del contaco: ");
-    int id = sc.nextInt();
+    int id = UtilInputs.leerEntero("Ingrese ID del contaco: ");
     sc.nextLine();
     System.out.print("Nuevo telefono: ");
     String tel = sc.nextLine();
