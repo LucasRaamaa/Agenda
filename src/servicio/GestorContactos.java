@@ -10,14 +10,8 @@ public class GestorContactos {
   public void agregarContacto(String nombre, String telefono, String email){
     contactos.add(new Contacto(nextId++ , nombre, telefono,email));
   }
-  public void listarContactos(){
-    if(contactos.isEmpty()){
-      System.out.println("No hay contactos cargados.");
-    }else {
-      for (Contacto c : contactos){
-        System.out.println(c);
-      }
-    }
+  public ArrayList<Contacto> obtenerContactos(){
+    return contactos;
   }
 
   public Contacto buscarNombre(String nombre){
