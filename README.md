@@ -1,8 +1,8 @@
-# 📇 Agenda de Contactos (Java)
+#  Agenda de Contactos (Java)
 
 ---
 
-## 🎯 Objetivo del proyecto
+##  Objetivo del proyecto
 
 Practicar y aplicar conceptos clave de programación en Java:
 - Clases, objetos y encapsulamiento.
@@ -14,7 +14,7 @@ Practicar y aplicar conceptos clave de programación en Java:
 
 ---
 
-## 🛠️ Estructura del Proyecto
+##  Estructura del Proyecto
 
 El código está organizado bajo el directorio `src/` con la siguiente estructura de paquetes:
 - `model`: Contiene la definición del modelo de datos de la aplicación ([Contacto.java](src/model/Contacto.java)).
@@ -24,7 +24,7 @@ El código está organizado bajo el directorio `src/` con la siguiente estructur
 
 ---
 
-## ✨ Funcionalidades y Mejoras de Estabilidad
+##  Funcionalidades y Mejoras de Estabilidad
 
 ### Funciones Principales:
 - **Agregar contacto:** Permite registrar nombre, teléfono y correo electrónico.
@@ -41,7 +41,7 @@ El código está organizado bajo el directorio `src/` con la siguiente estructur
 
 ---
 
-## 🚀 Cómo Ejecutar el Proyecto
+##  Cómo Ejecutar el Proyecto
 
 1. **Compilar los archivos Java:**
    ```bash
